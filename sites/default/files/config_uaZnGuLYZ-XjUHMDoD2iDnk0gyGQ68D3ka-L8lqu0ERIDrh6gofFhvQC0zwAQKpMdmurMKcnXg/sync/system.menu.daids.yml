@@ -1,0 +1,8 @@
+uuid: 737177a1-23d8-430e-bf0a-ce9c6856e8f7
+langcode: es
+status: true
+dependencies: {  }
+id: daids
+label: 'MENU DAIDS'
+description: ''
+locked: false

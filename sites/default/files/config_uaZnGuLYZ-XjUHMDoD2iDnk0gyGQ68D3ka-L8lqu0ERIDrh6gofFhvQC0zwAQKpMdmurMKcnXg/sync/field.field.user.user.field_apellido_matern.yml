@@ -1,0 +1,20 @@
+uuid: 4daab4a5-ec7e-4ade-b488-992c3d575ab7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_apellido_matern
+  module:
+    - user
+id: user.user.field_apellido_matern
+field_name: field_apellido_matern
+entity_type: user
+bundle: user
+label: 'Apellido materno'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

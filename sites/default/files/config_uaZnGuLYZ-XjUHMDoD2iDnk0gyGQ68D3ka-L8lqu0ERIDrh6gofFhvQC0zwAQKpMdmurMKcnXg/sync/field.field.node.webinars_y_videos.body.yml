@@ -1,0 +1,24 @@
+uuid: 7860260b-5142-4a1b-a4c9-2811586d47ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webinars_y_videos
+  module:
+    - text
+id: node.webinars_y_videos.body
+field_name: body
+entity_type: node
+bundle: webinars_y_videos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

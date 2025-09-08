@@ -1,0 +1,14 @@
+uuid: 9f03a964-3cf4-43d1-ba29-67b452c0d11a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: publicaciones_autor_nombre_autor
+label: /publicaciones/autor/nombre-autor
+type: 'canonical_entities:node'
+pattern: '/publicaciones/autor/[node:field_autor:entity:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,9 @@
+uuid: 6589e447-018b-435d-8923-ac3a133b27c0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de e-libro'
+vid: tipo_de_e_libro
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,13 @@
+/* Ajuste seguro de equidistancia en el menú principal */
+ul.menu li {
+  display: inline-block;
+  margin-right: 40px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+ul.menu {
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+}

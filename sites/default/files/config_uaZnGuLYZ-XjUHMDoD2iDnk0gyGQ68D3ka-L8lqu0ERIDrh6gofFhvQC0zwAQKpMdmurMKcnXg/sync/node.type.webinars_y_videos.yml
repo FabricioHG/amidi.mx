@@ -1,0 +1,18 @@
+uuid: 95c594ef-0d2e-47bb-b2c3-b84976ff9e20
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Webinars y videos'
+type: webinars_y_videos
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,26 @@
+uuid: 0adde678-16b7-4da0-8918-17175557d408
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_webinars
+    - node.type.webinars_y_videos
+  module:
+    - video
+id: node.webinars_y_videos.field_video_webinars
+field_name: field_video_webinars
+entity_type: node
+bundle: webinars_y_videos
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
+field_type: video

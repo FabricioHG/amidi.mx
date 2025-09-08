@@ -1,0 +1,80 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\node\Entity\Node;
+
+function udg_liston_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Aplica solo en los formularios de nodos.
+  
+  if ($form_id === 'node_webinars_y_videos_edit_form' || $form_id === 'node_webinars_y_videos_form') {
+    // Verifica si el usuario tiene permiso para editar la información de auditoría.
+    if (\Drupal::currentUser()->hasPermission('edit audit info') && \Drupal::currentUser()->hasRole('gestor_de_contenido')) {
+      
+      // Obtén el nodo desde el estado del formulario.
+      $node = $form_state->getFormObject()->getEntity();
+
+      // Verifica que la entidad no sea nula y sea un nodo.
+      if ($node instanceof Node) {
+        
+        // Obtén el tiempo de creación como timestamp.
+        $created_time = $node->getCreatedTime();
+       
+        // Si decides permitir cambiar la fecha de creación, lo puedes hacer así:
+        $form['created_custom'] = [
+          '#type' => 'datetime',
+          '#title' => t('Creation Date'),
+          '#default_value' => DrupalDateTime::createFromTimestamp($created_time), // DrupalDateTime es el objeto correcto
+        ];
+
+        // Agregar función de envío personalizado.
+        $form['actions']['submit']['#submit'][] = 'udg_liston_custom_submit';
+      }
+    }
+  }
+  
+}
+
+function udg_liston_custom_submit($form, FormStateInterface $form_state) {
+  $current_user = \Drupal::currentUser();  
+  $node = $form_state->getFormObject()->getEntity();
+
+  // Si el usuario tiene permiso para editar la información de auditoría.
+  if ($current_user->hasPermission('edit audit info') && $current_user->hasRole('gestor_de_contenido')) {
+    
+    // Asegúrate de que el campo 'created' existe.
+    if ($node->hasField('created') && !$node->get('created')->isEmpty()) {
+      // Aquí, obtenemos el valor del campo 'created' del formulario.
+      $created_custom = $form_state->getValue('created_custom');
+
+      if (!empty($created_custom)) {
+      // Convertir el valor de 'created_custom' a un timestamp.
+      $timestamp = strtotime($created_custom);
+
+      // Verificar si el valor convertido es válido (strtotime puede fallar si el formato no es correcto).
+      if ($timestamp !== false) {
+        // Asignar el timestamp al campo 'created' del nodo.
+        $node->setCreatedTime($timestamp);
+        $node->save();
+        \Drupal::logger('udg_liston')->error('Fecha actualizada');
+      }
+      else {
+        // Registrar un error si el valor no es válido.
+        \Drupal::logger('udg_liston')->error('La fecha introducida en "created_custom" no es válida.');
+      }
+    }
+
+      // Verificamos si el valor es una cadena que puede convertirse a timestamp.
+      // if (is_string($created_value)) {
+      //   $timestamp = strtotime($created_value);
+      //   if ($timestamp !== false) {
+      //     $node->setCreatedTime($timestamp); // Establecemos el timestamp si es válido.
+      //   }
+      // }
+    }
+  }
+}
+
+
+
+

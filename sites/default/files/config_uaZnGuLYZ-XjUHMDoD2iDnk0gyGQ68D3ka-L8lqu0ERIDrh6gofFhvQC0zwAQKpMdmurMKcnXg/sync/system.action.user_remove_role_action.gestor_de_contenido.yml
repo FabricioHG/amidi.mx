@@ -1,0 +1,14 @@
+uuid: b78dc832-cf90-4ccf-b63e-301a85807250
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_de_contenido
+  module:
+    - user
+id: user_remove_role_action.gestor_de_contenido
+label: 'Elimina el rol Gestor de contenido al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_de_contenido

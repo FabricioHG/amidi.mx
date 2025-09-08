@@ -1,0 +1,39 @@
+uuid: 8deaedd2-5c71-416b-84bb-5820c996ddcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.daids
+  module:
+    - menu_block
+    - system
+  theme:
+    - drudg8b3
+id: drudg8b3_menudaids
+theme: drudg8b3
+region: precontent3
+weight: 0
+provider: null
+plugin: 'menu_block:daids'
+settings:
+  id: 'menu_block:daids'
+  label: 'MENU DAIDS'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  display_empty: false
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'daids:'
+  render_parent: false
+  suggestion: daids
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/doctorado-en-administracion-de-la-innovacion-para-el-desarrollo-sostenible\r\n/doctorado-en-administracion-de-la-innovacion-para-el-desarrollo-sostenible/*"

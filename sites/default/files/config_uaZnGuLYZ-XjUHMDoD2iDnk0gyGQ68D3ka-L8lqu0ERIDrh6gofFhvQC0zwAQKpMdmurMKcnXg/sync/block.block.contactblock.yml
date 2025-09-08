@@ -1,0 +1,29 @@
+uuid: 8d0430fb-0e5d-4101-a00d-8d78f224263a
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - drudg8b3
+id: contactblock
+theme: drudg8b3
+region: content
+weight: -13
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: '+INFO envíanos un email'
+  label_display: visible
+  provider: contact_block
+  contact_form: feedback
+  form_display: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,39 @@
+uuid: 09d94765-1923-4074-a282-03577e3cf4a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-maestria
+  module:
+    - menu_block
+    - system
+  theme:
+    - drudg8b3
+id: menumaestria
+theme: drudg8b3
+region: precontent3
+weight: 0
+provider: null
+plugin: 'menu_block:menu-maestria'
+settings:
+  id: 'menu_block:menu-maestria'
+  label: 'Menu maestria'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  display_empty: false
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'menu-maestria:'
+  render_parent: false
+  suggestion: menu_maestria
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/maestria-en-administracion-de-la-innovacion-para-el-desarrollo-sostenible\r\n/maestria-en-administracion-de-la-innovacion-para-el-desarrollo-sostenible/*"

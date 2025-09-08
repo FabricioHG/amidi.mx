@@ -1,0 +1,4 @@
+edit audit info:
+  title: 'Editar información de auditoría de nodos'
+  description: 'Permite editar los campos de auditoría como el autor y la fecha de creación de un nodo.'
+  restrict access: TRUE

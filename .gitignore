@@ -1,0 +1,2 @@
+# Ignorar settings.php
+/sites/*/settings.php

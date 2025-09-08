@@ -1,0 +1,11 @@
+uuid: fb5d0c43-6d46-4128-a341-8323a7d7d01b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.autor
+id: taxonomy_term.autor
+target_entity_type_id: taxonomy_term
+target_bundle: autor
+default_langcode: site_default
+language_alterable: false

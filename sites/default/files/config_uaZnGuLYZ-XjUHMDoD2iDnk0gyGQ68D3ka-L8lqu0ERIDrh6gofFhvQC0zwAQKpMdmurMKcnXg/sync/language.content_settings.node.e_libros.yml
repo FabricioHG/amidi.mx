@@ -1,0 +1,11 @@
+uuid: 8bed424e-1681-4cd9-8199-52c9cc0ea7eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.e_libros
+id: node.e_libros
+target_entity_type_id: node
+target_bundle: e_libros
+default_langcode: site_default
+language_alterable: false
