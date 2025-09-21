@@ -220,7 +220,7 @@ theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clea
         </a>
         {{ page.content }}
         {% endblock %}
-        
+      
         </section>
       {# Sidebar Second #}
       {% if page.sidebar_second %}
@@ -240,7 +240,17 @@ theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clea
 <div id="content2" class="{{ container }}">
   <div class="container content2">
     {{ page.content2 }}
-  </div>
+     
+    {#Formulario descarga de archivo#}
+        <div class="cont_formulario">
+          <div class="cont_img itm">
+            <img src="/themes/drudg8b3/images/amidi_form.png">
+          </div>
+          <div class="itm_formulario itm"> 
+          {{ drupal_entity('webform', 'inscripcion') }}
+          </div>
+        </div>
+      </div>
 </div>
 {% endblock %}
 {% endif %}

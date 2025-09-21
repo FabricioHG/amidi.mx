@@ -13,10 +13,6 @@
 }
 @font-face {
 	font-family: "Montserrat wght";
-	src: url("../fonts/Quicksand Book/Montserrat wght.otf");
-}
-@font-face {
-	font-family: "Montserrat wght";
 	src: url("../fonts/Camber/Emtype Foundry - Camber SemiBold Regular.otf");
 }
 @font-face {
@@ -1274,7 +1270,92 @@ img.ico_whats{
   width: 100%;
   height: auto;
 }
-
+/*Fabricio*/
+/*formulario descarga de archivo*/
+.cont_formulario {
+  clear: both;
+  display: flex;
+  background-color: #eb3824;
+}
+/*.cont_img.itm {
+  border: 1px solid;
+}*/
+.cont_img.itm img{
+  width: 100%;
+  height: auto;
+}
+.itm_formulario.itm {
+  padding: 10px;
+  margin: auto;
+}
+.webform-submission-inscripcion-form .webform-progress-tracker.progress-tracker.progress-tracker--center {
+  font-size: 11px;
+  margin: 0px;
+  
+}
+.webform-submission-inscripcion-form{
+  max-width: 400px;
+  margin-top: 30px !important;
+}
+.webform-submission-inscripcion-form .form-control{
+  background-color: #eb3824 !important;
+  color: #fff !important;
+  border-top: 0px !important;;
+  border-left: 0px !important;;
+  border-right: 0px !important;;
+  border-bottom: 1px solid #fff !important;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: 0px !important;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important;
+}
+.webform-submission-inscripcion-form .iti__arrow{
+  border-top: 4px solid #fff;
+}
+.webform-submission-inscripcion-form .form-control::placeholder{
+  color: #fff;
+}
+.progress-step.is-active .progress-marker::before {
+  background-color: #00935A;
+}
+.webform-progress-tracker .progress-step:not(.is-active) .progress-marker::before{
+  background-color: #00935A !important;
+}
+.progress-step .progress-marker::after {
+  background-color: #fff !important;
+}
+.webform-progress-tracker .progress-step.is-active .progress-title {
+  font-weight: bold;
+  color: #fff;
+}
+.progress-title {
+  color: #fff;
+}
+#edit-wizard-next,
+.itm_formulario.itm .form-submit {
+  background-color: #00935a;
+  border: 1px solid #00935a;
+  color: #fff;
+}
+.enlace_descarga{
+  color: #fff
+}
+.enlace_descarga:hover,
+.enlace_descarga:visited{
+  color: #fff !important;
+  font-size:16px !important;
+  text-decoration: none !important;
+}
+.webform-progress {
+  display: none;
+}
+.webform-submission-inscripcion-add-form  .webform-progress{
+  display: block;
+}
+.txt_form_complete{
+  font-size: 18px;
+  text-align: center;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  2.  adjustments for max width of 767 px
@@ -1345,6 +1426,9 @@ justify-content: center;
   }
   form#contact-message-feedback-form{
     padding: 30px 10px;
+  }
+  .cont_img.itm{
+    display: none;
   }
 
 }
@@ -1510,6 +1594,9 @@ left: 0;
   display: flex;
 justify-content: right;
 }
+cont_img.itm{
+  display: block;
+}
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1656,13 +1743,7 @@ form#contact-message-feedback-form{
 
 /*Bloque avisos enlaces de portada*/
 
-#block-views-block-avisos-informacion-en-portada-block-1 {
-  padding: 20px;
-display: block;
-max-width: 600px;
-float: left;
-	
-}
+
 #block-views-block-avisos-informacion-en-portada-block-1 .views-row {
   border: 1px solid;
   border-radius: 20px;
@@ -1677,6 +1758,12 @@ float: left;
   background-position: 25px;*/
 	height: auto;
 	padding-top: 20px;
+  max-width: 400px;
+}
+#block-views-block-avisos-informacion-en-portada-block-1  .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #block-views-block-avisos-informacion-en-portada-block-1 .views-field-title{
 	padding: 0 20px 20px 20px;
@@ -1707,9 +1794,14 @@ vertical-align: middle;
 #block-views-block-avisos-informacion-en-portada-block-1 h2.block-title {
   color: #000;
   background-color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
 }
 #block-views-block-avisos-informacion-en-portada-block-1 h2{
 	margin-top: 10px;
+}
+#content2 {
+  padding-top: 20px;
 }
 
 /*Bloque contacto front*/
@@ -1735,7 +1827,7 @@ form#contact-message-feedback-form input{
 /*Bloque programa*/
 #block-programafront {
   overflow: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .img_cont img{
   max-width: 550px;

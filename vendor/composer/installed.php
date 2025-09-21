@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/legacy-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '77c37fae8c43a628efee6f4d631065cda6eb7bc8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -541,6 +541,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/facebook_pixel' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'reference' => '2.0.1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/facebook_pixel',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/fieldblock' => array(
             'pretty_version' => '2.3.0',
             'version' => '2.3.0.0',
@@ -596,9 +605,9 @@
             'dev_requirement' => false,
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '77c37fae8c43a628efee6f4d631065cda6eb7bc8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
