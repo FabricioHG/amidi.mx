@@ -38,6 +38,7 @@ elements: |-
       '#title': 'Nombre y apellidos'
       '#title_display': invisible
       '#placeholder': 'Nombre y apellidos'
+      '#required': true
     whatsapp:
       '#type': tel
       '#title': Whatsapp
@@ -45,16 +46,19 @@ elements: |-
       '#placeholder': Whatsapp
       '#international': true
       '#international_initial_country': MX
+      '#required': true
     correo_electronico:
       '#type': email
       '#title': 'Correo electrónico'
       '#title_display': invisible
       '#placeholder': 'Correo electrónico'
+      '#required': true
     ciudad:
       '#type': textfield
       '#title': Ciudad
       '#title_display': invisible
       '#placeholder': Ciudad
+      '#required': true
     tipo_de_actividad:
       '#type': select
       '#title': 'Tipo de actividad'
@@ -64,6 +68,7 @@ elements: |-
         Docente: Docente
         'No empleado': 'No empleado'
       '#empty_option': 'Tipo de actividad'
+      '#required': true
     que_posgrado_prefiere:
       '#type': select
       '#title': 'Que posgrado prefiere'
@@ -72,20 +77,27 @@ elements: |-
         MAIDS: MAIDS
         DAIDS: DAIDS
       '#empty_option': 'Que posgrado prefiere'
+      '#required': true
     que_esperas_del_posgrado:
       '#type': textarea
       '#title': '¿Que esperas del posgrado?'
       '#title_display': invisible
       '#rows': 4
       '#placeholder': '¿Que esperas del posgrado?'
+      '#required': true
   descarga_de_archivo:
     '#type': webform_wizard_page
     '#title': 'Descarga de archivo'
     '#prev_button_label': Atrás
     processed_text:
       '#type': processed_text
-      '#text': '<p class="text-align-center contenedor_descarga">&nbsp;</p><p class="text-align-center contenedor_descarga"><a class="enlace_descarga" href="#"><strong>Descarga el archivo aquí.</strong></a></p><p class="text-align-center contenedor_descarga">&nbsp;</p>'
+      '#text': '<p class="text-align-center contenedor_descarga">&nbsp;</p><p class="text-align-center contenedor_descarga"><a class="enlace_descarga" href="/sites/default/files/BROCHURE_POSGRADOS.pdf" target="_blank"><strong>Descarga el archivo aquí.</strong></a></p><p class="text-align-center contenedor_descarga">&nbsp;</p>'
       '#format': full_html
+    terms_of_service:
+      '#type': webform_terms_of_service
+      '#title': 'Acepto los {terms of service}.'
+      '#required': true
+      '#terms_content': '<p>Términos y condiciones de la AMIDI<br>Tus datos se usarán solo para fines académicos y de admisión. AMIDI garantiza su confidencialidad y no la compartirá con terceros. Puedes añadir otros avisos (por ejemplo, inclusiones voluntarias de marketing o descargos de responsabilidad legal) al descargo de privacidad predeterminado de Facebook</p>'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
