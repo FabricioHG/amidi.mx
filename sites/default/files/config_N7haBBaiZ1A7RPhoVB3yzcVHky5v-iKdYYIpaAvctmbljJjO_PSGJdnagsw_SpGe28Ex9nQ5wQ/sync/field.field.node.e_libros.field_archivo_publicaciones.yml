@@ -1,0 +1,27 @@
+uuid: 3f3962f9-b32c-430f-8f5e-0085a62dead4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo_publicaciones
+    - node.type.e_libros
+  module:
+    - file
+id: node.e_libros.field_archivo_publicaciones
+field_name: field_archivo_publicaciones
+entity_type: node
+bundle: e_libros
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

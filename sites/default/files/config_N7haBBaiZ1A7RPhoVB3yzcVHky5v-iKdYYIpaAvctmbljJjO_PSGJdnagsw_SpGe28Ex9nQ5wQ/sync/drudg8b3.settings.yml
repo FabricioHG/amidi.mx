@@ -1,0 +1,56 @@
+schemas:
+  bootstrap: 8000
+  drudg8b3: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://favicon_0.ico'
+  url: /sites/default/files/asset-5_0.svg
+  use_default: 0
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://amidi_1.png'
+  url: ''
+  use_default: 0
+table_responsive: '-1'
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+  liston: ''
+  precontent: ''
+  precontent2: ''
+  slideshow: ''
+  precontent3: ''
+  content2: ''
+  content3: ''
+  content4: ''
+  content5: ''
+  content6: ''
+  content7: ''
+  content8: ''
+  content9: ''
+  content10: ''
+  content11: ''
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '0'
+cdn_cache_ttl_themes: '0'
+reset_http_request_cache: ''
+table: ''
+fluid_container: 1
+cdn_provider: cdnjs
+breadcrumb_home: 1
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+langcode: es
+cdn_version: 3.0.0
+apply: Apply

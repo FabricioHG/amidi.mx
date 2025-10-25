@@ -1,0 +1,30 @@
+uuid: a6e87d28-881a-49ed-9ee3-20251524e03d
+langcode: es
+status: true
+dependencies: {  }
+id: equidistancia_menu_principal
+label: 'EQUIDISTANCIA MENU PRINCIPAL'
+code: |+
+  /* Para asegurar equidistancia entre los logos del bloque de precontent */
+  .region.region-precontent .field--item > div {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  /* Opcional: controla el tamaño de los logos si es necesario */
+  .region.region-precontent img {
+    max-height: 85px;
+    height: auto;
+    max-width: 100%;
+  }
+
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

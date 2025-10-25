@@ -1,0 +1,19 @@
+uuid: 188c9ed7-5d0a-4696-8bef-31abd6c99f9f
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_link_aviso_info_portada
+field_name: field_link_aviso_info_portada
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

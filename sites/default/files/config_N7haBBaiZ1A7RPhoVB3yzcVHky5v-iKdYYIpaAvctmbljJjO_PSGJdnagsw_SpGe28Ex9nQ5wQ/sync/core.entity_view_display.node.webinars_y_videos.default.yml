@@ -1,0 +1,47 @@
+uuid: 28fa8707-acea-4d28-a54b-feb8d4907259
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.webinars_y_videos.body
+    - field.field.node.webinars_y_videos.field_tipo_de_video
+    - field.field.node.webinars_y_videos.field_video_webinars
+    - node.type.webinars_y_videos
+  module:
+    - user
+    - video
+id: node.webinars_y_videos.default
+targetEntityType: node
+bundle: webinars_y_videos
+mode: default
+content:
+  field_tipo_de_video:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_webinars:
+    type: video_embed_player
+    label: hidden
+    settings:
+      autoplay: true
+      width: '854'
+      height: '480'
+      related_videos: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

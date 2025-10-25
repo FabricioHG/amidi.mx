@@ -1,0 +1,14 @@
+uuid: d090237a-4cf8-4efd-b78e-963069be1bc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_de_contenido
+  module:
+    - user
+id: user_add_role_action.gestor_de_contenido
+label: 'Añade el rol Gestor de contenido al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_de_contenido

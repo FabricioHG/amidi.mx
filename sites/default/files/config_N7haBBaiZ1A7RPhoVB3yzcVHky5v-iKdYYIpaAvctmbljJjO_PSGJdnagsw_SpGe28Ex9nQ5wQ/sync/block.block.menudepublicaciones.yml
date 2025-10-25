@@ -1,0 +1,30 @@
+uuid: 84889912-9be1-4da1-b0bb-b018606b24bf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e327b199-9d7e-41a7-8957-1e914669664d'
+  module:
+    - block_content
+    - system
+  theme:
+    - drudg8b3
+id: menudepublicaciones
+theme: drudg8b3
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:e327b199-9d7e-41a7-8957-1e914669664d'
+settings:
+  id: 'block_content:e327b199-9d7e-41a7-8957-1e914669664d'
+  label: 'Menú de publicaciones'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publicaciones\r\n/publicaciones/*"

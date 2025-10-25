@@ -1,0 +1,11 @@
+uuid: 16e3d460-97ab-4e6d-be12-d677915c83e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icono
+id: taxonomy_term.icono
+target_entity_type_id: taxonomy_term
+target_bundle: icono
+default_langcode: site_default
+language_alterable: false

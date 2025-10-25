@@ -1,0 +1,13 @@
+uuid: 89cb60a7-5ace-4678-b94b-c89eece07f70
+langcode: es
+status: true
+dependencies: {  }
+id: respaldo_diario
+label: 'Respaldo diario'
+enabled: true
+keep: 15
+period: 86400
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: amidi_mx

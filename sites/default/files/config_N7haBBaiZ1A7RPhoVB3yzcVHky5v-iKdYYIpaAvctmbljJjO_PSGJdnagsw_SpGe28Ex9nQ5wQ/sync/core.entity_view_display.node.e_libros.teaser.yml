@@ -1,0 +1,44 @@
+uuid: 6039fae3-ed6f-49b8-99c1-c65fbc21fd06
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.e_libros.body
+    - field.field.node.e_libros.field_ano
+    - field.field.node.e_libros.field_archivo_publicaciones
+    - field.field.node.e_libros.field_autor
+    - field.field.node.e_libros.field_clave
+    - field.field.node.e_libros.field_tipo_de_publicacion
+    - node.type.e_libros
+  module:
+    - text
+    - user
+id: node.e_libros.teaser
+targetEntityType: node
+bundle: e_libros
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_ano: true
+  field_archivo_publicaciones: true
+  field_autor: true
+  field_clave: true
+  field_tipo_de_publicacion: true
+  langcode: true

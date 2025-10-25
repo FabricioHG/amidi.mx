@@ -1,0 +1,8 @@
+uuid: 72345c5f-85ff-4424-9051-f612761a753b
+langcode: es
+status: true
+dependencies: {  }
+id: menu-maestria
+label: 'Menu maestria'
+description: ''
+locked: false

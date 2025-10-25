@@ -1275,18 +1275,22 @@ img.ico_whats{
 .cont_formulario {
   clear: both;
   display: flex;
-  background-color: #eb3824;
+  border: 2px solid #00935A;
+  border-radius: 30px;
 }
 /*.cont_img.itm {
   border: 1px solid;
 }*/
 .cont_img.itm img{
-  width: 100%;
+  width: 500px;
   height: auto;
+  border-radius: 30px;
 }
 .itm_formulario.itm {
-  padding: 10px;
+  flex: 1;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 .webform-submission-inscripcion-form .webform-progress-tracker.progress-tracker.progress-tracker--center {
   font-size: 11px;
@@ -1298,12 +1302,11 @@ img.ico_whats{
   margin-top: 30px !important;
 }
 .webform-submission-inscripcion-form .form-control{
-  background-color: #eb3824 !important;
-  color: #fff !important;
+  color: #000 !important;
   border-top: 0px !important;;
   border-left: 0px !important;;
   border-right: 0px !important;;
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid #eb3824 !important;
   border-radius: 0;
   text-align: center;
   box-shadow: 0px !important;
@@ -1313,7 +1316,7 @@ img.ico_whats{
   border-top: 4px solid #fff;
 }
 .webform-submission-inscripcion-form .form-control::placeholder{
-  color: #fff;
+  color: #000;
 }
 .progress-step.is-active .progress-marker::before {
   background-color: #00935A;
@@ -1326,10 +1329,10 @@ img.ico_whats{
 }
 .webform-progress-tracker .progress-step.is-active .progress-title {
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 .progress-title {
-  color: #fff;
+  color: #000;
 }
 #edit-wizard-next,
 .itm_formulario.itm .form-submit {
@@ -1338,11 +1341,11 @@ img.ico_whats{
   color: #fff;
 }
 .enlace_descarga{
-  color: #fff
+  color: #000
 }
 .enlace_descarga:hover,
 .enlace_descarga:visited{
-  color: #fff !important;
+  color: #000 !important;
   font-size:16px !important;
   text-decoration: none !important;
 }
@@ -1355,6 +1358,31 @@ img.ico_whats{
 .txt_form_complete{
   font-size: 18px;
   text-align: center;
+}
+.txt_form {
+  padding: 5px;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+}
+.cont_btn_form {
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+}
+.btn_form {
+  border: 1px solid #1D7606;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1D7606;
+  color: #fff;
+}
+.btn_form:hover,
+.btn_form:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1594,8 +1622,10 @@ left: 0;
   display: flex;
 justify-content: right;
 }
-cont_img.itm{
-  display: block;
+.cont_img.itm {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 }
 
@@ -1658,6 +1688,11 @@ left: 0;
 	font-weight: bold;
 	width: 60%;
 }
+  .cont_img.itm {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1736,6 +1771,12 @@ form#contact-message-feedback-form{
   }
   #block-contactblock {
     max-width: 400px;
+  }
+  .cont_img.itm {
+    display: flex;
+    flex: 1;
+    margin: auto;
+    justify-content: end;
   }
 }
 

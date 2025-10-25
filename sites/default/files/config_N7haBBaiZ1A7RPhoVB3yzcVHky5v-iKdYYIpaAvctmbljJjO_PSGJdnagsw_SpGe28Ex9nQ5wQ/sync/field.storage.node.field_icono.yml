@@ -1,0 +1,20 @@
+uuid: be01597f-e2a0-4b4b-977c-f0d7624f3d0d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_icono
+field_name: field_icono
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

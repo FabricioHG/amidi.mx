@@ -1,0 +1,9 @@
+uuid: 4e7e8a27-49ee-4dc9-900e-8d4e0a55393d
+langcode: es
+status: true
+dependencies: {  }
+name: Icono
+vid: icono
+description: null
+weight: 0
+new_revision: false

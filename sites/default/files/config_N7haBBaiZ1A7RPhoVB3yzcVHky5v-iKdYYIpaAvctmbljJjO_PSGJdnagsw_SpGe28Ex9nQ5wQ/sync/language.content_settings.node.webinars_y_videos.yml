@@ -1,0 +1,11 @@
+uuid: 56236fc9-184e-451f-b17b-d0a66e83011d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.webinars_y_videos
+id: node.webinars_y_videos
+target_entity_type_id: node
+target_bundle: webinars_y_videos
+default_langcode: site_default
+language_alterable: false

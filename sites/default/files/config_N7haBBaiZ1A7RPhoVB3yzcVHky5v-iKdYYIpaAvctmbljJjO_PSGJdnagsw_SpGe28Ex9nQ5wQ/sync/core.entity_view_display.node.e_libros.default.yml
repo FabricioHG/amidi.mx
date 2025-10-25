@@ -1,0 +1,73 @@
+uuid: 87bf5946-0f44-46f8-8a4f-f4cfade51ad1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.e_libros.body
+    - field.field.node.e_libros.field_ano
+    - field.field.node.e_libros.field_archivo_publicaciones
+    - field.field.node.e_libros.field_autor
+    - field.field.node.e_libros.field_clave
+    - field.field.node.e_libros.field_tipo_de_publicacion
+    - node.type.e_libros
+  module:
+    - datetime
+    - file
+    - user
+id: node.e_libros.default
+targetEntityType: node
+bundle: e_libros
+mode: default
+content:
+  field_ano:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_archivo_publicaciones:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_autor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_clave:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tipo_de_publicacion:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

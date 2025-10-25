@@ -1,0 +1,66 @@
+uuid: 31d13d94-bf2e-4069-b024-91f0219a108f
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.avisos_informacion_portada
+    - node.type.e_libros
+    - node.type.page
+    - node.type.slideshow
+    - node.type.webinars_y_videos
+  module:
+    - block
+    - block_content
+    - contextual
+    - file
+    - filter
+    - node
+    - shortcut
+    - system
+    - toolbar
+    - udg_liston
+id: gestor_de_contenido
+label: 'Gestor de contenido'
+weight: 3
+is_admin: null
+permissions:
+  - 'access block library'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer shortcuts'
+  - 'create avisos_informacion_portada content'
+  - 'create e_libros content'
+  - 'create page content'
+  - 'create slideshow content'
+  - 'create webinars_y_videos content'
+  - 'delete any avisos_informacion_portada content'
+  - 'delete any e_libros content'
+  - 'delete any page content'
+  - 'delete any slideshow content'
+  - 'delete any webinars_y_videos content'
+  - 'delete own avisos_informacion_portada content'
+  - 'delete own e_libros content'
+  - 'delete own files'
+  - 'delete own page content'
+  - 'delete own slideshow content'
+  - 'delete own webinars_y_videos content'
+  - 'edit any avisos_informacion_portada content'
+  - 'edit any e_libros content'
+  - 'edit any page content'
+  - 'edit any slideshow content'
+  - 'edit any webinars_y_videos content'
+  - 'edit audit info'
+  - 'edit own avisos_informacion_portada content'
+  - 'edit own e_libros content'
+  - 'edit own page content'
+  - 'edit own slideshow content'
+  - 'edit own webinars_y_videos content'
+  - 'use text format full_html'
+  - 'use text format restricted_html'

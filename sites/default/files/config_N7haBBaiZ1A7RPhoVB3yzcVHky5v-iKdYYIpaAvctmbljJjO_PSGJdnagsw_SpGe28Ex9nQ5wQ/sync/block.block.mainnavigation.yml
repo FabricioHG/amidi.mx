@@ -1,0 +1,40 @@
+uuid: 7470612a-7469-4689-88b7-85a6f18f591a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - system
+  theme:
+    - drudg8b3
+id: mainnavigation
+theme: drudg8b3
+region: sidebar_second
+weight: -23
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Navegación secundaria'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  display_empty: false
+  label_link: false
+  label_type: block
+  level: 2
+  depth: 0
+  expand_all_items: false
+  parent: 'main:'
+  render_parent: false
+  suggestion: main
+  hide_on_nonactive: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/acerca/*\r\n/drudg8/*\r\n/multimedia/*"
