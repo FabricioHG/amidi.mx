@@ -1,36 +1,34 @@
 ---
 deployment:
-  tasks:
-    - export DEPLOYPATH=/home/wwamid/public_html/
-    - /bin/cp -R core $DEPLOYPATH
-    - /bin/cp -R libraries $DEPLOYPATH
-    - /bin/cp -R modules $DEPLOYPATH
-    - /bin/cp -R private $DEPLOYPATH
-    - /bin/cp -R profiles $DEPLOYPATH
-    - /bin/cp -R sites $DEPLOYPATH
-    - /bin/cp -R themes $DEPLOYPATH
-    - /bin/cp -R vendor $DEPLOYPATH
-    - /bin/cp  .csslintrc $DEPLOYPATH
-    - /bin/cp  .editorconfig $DEPLOYPATH
-    - /bin/cp  .eslintignore $DEPLOYPATH
-    - /bin/cp  .gitattributes $DEPLOYPATH
-    - /bin/cp  .gitignore $DEPLOYPATH
-    - /bin/cp  .htaccess $DEPLOYPATH
-    - /bin/cp  .eslintrc.json $DEPLOYPATH
-    - /bin/cp  .ht.router.php $DEPLOYPATH
-    - /bin/cp  composer.lock $DEPLOYPATH
-    - /bin/cp  example.gitignore $DEPLOYPATH
-    - /bin/cp  README.md $DEPLOYPATH
-    - /bin/cp  web.config $DEPLOYPATH
-    - /bin/cp  INSTALL.txt $DEPLOYPATH
-    - /bin/cp  robots.txt $DEPLOYPATH
-    - /bin/cp  favicon.ico $DEPLOYPATH
-    - /bin/cp  favicon.png $DEPLOYPATH
-    - /bin/cp  composer.json $DEPLOYPATH
-    - /bin/cp  autoload.php $DEPLOYPATH
-    - /bin/cp  index.php $DEPLOYPATH
-    - /bin/cp  update.php $DEPLOYPATH
-    - /bin/cp  sitemap.xml $DEPLOYPATH
-    - /bin/cp  cpanel.yml $DEPLOYPATH
-
-   
+ tasks:
+ - export DEPLOYPATH=/home/wwamid/public_html/
+ - /bin/cp -R core $DEPLOYPATH
+ - /bin/cp -R libraries $DEPLOYPATH
+ - /bin/cp -R modules $DEPLOYPATH
+ - /bin/cp -R private $DEPLOYPATH
+ - /bin/cp -R profiles $DEPLOYPATH
+ - /bin/cp -R sites $DEPLOYPATH
+ - /bin/cp -R themes $DEPLOYPATH
+ - /bin/cp -R vendor $DEPLOYPATH
+ - /bin/cp  .csslintrc $DEPLOYPATH
+ - /bin/cp  .editorconfig $DEPLOYPATH
+ - /bin/cp  .eslintignore $DEPLOYPATH
+ - /bin/cp  .gitattributes $DEPLOYPATH
+ - /bin/cp  .gitignore $DEPLOYPATH
+ - /bin/cp  .htaccess $DEPLOYPATH
+ - /bin/cp  .eslintrc.json $DEPLOYPATH
+ - /bin/cp  .ht.router.php $DEPLOYPATH
+ - /bin/cp  composer.lock $DEPLOYPATH
+ - /bin/cp  example.gitignore $DEPLOYPATH
+ - /bin/cp  README.md $DEPLOYPATH
+ - /bin/cp  web.config $DEPLOYPATH
+ - /bin/cp  INSTALL.txt $DEPLOYPATH
+ - /bin/cp  robots.txt $DEPLOYPATH
+ - /bin/cp  favicon.ico $DEPLOYPATH
+ - /bin/cp  favicon.png $DEPLOYPATH
+ - /bin/cp  composer.json $DEPLOYPATH
+ - /bin/cp  autoload.php $DEPLOYPATH
+ - /bin/cp  index.php $DEPLOYPATH
+ - /bin/cp  update.php $DEPLOYPATH
+ - /bin/cp  sitemap.xml $DEPLOYPATH
+ - /bin/cp  cpanel.yml $DEPLOYPATH
