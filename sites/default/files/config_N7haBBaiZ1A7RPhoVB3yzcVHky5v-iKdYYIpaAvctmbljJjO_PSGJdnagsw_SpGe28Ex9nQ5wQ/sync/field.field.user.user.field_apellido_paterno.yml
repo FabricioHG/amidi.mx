@@ -1,0 +1,20 @@
+uuid: 0e19ea13-1e1a-4a05-ad79-42f169e0926e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_apellido_paterno
+  module:
+    - user
+id: user.user.field_apellido_paterno
+field_name: field_apellido_paterno
+entity_type: user
+bundle: user
+label: 'Apellido paterno'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

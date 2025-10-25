@@ -1,0 +1,11 @@
+uuid: 1592b448-4c02-49e8-9c55-a1edd3ffe2d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_e_libro
+id: taxonomy_term.tipo_de_e_libro
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_e_libro
+default_langcode: site_default
+language_alterable: false

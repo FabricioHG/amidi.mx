@@ -1,0 +1,21 @@
+uuid: cf19ae94-6402-4a53-a3cc-a50cc3cab7a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano
+    - node.type.e_libros
+  module:
+    - datetime
+id: node.e_libros.field_ano
+field_name: field_ano
+entity_type: node
+bundle: e_libros
+label: Año
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

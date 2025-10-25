@@ -1,0 +1,40 @@
+uuid: 7efb8163-d944-4df8-a21d-c51fd8cd1b1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.avisos_informacion_portada.body
+    - field.field.node.avisos_informacion_portada.field_archivo
+    - field.field.node.avisos_informacion_portada.field_icono
+    - field.field.node.avisos_informacion_portada.field_link_aviso_info_portada
+    - node.type.avisos_informacion_portada
+  module:
+    - text
+    - user
+id: node.avisos_informacion_portada.teaser
+targetEntityType: node
+bundle: avisos_informacion_portada
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_archivo: true
+  field_icono: true
+  field_link_aviso_info_portada: true
+  langcode: true

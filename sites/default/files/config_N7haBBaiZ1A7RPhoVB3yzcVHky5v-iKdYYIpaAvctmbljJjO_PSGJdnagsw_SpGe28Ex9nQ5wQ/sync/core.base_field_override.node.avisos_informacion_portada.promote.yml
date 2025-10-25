@@ -1,0 +1,22 @@
+uuid: 8e8d27b6-b3d8-4413-92dd-966b19c3d61d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.avisos_informacion_portada
+id: node.avisos_informacion_portada.promote
+field_name: promote
+entity_type: node
+bundle: avisos_informacion_portada
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

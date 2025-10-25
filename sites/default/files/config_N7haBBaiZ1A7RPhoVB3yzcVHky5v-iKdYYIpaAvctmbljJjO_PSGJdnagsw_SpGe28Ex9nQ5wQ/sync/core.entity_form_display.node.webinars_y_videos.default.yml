@@ -1,0 +1,98 @@
+uuid: ab9fbfc7-1367-4a89-8d28-bfdca36469af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.webinars_y_videos.body
+    - field.field.node.webinars_y_videos.field_tipo_de_video
+    - field.field.node.webinars_y_videos.field_video_webinars
+    - node.type.webinars_y_videos
+  module:
+    - path
+    - video
+id: node.webinars_y_videos.default
+targetEntityType: node
+bundle: webinars_y_videos
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tipo_de_video:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_video_webinars:
+    type: video_embed
+    weight: 2
+    region: content
+    settings:
+      allowed_providers:
+        youtube: youtube
+        instagram: 0
+        dailymotion: 0
+        vine: 0
+        facebook: 0
+        vimeo: 0
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

@@ -1,0 +1,29 @@
+uuid: 7edc2197-3af3-446b-bd6a-40e8b21d2f7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_publicacion
+    - node.type.e_libros
+    - taxonomy.vocabulary.tipo_de_e_libro
+id: node.e_libros.field_tipo_de_publicacion
+field_name: field_tipo_de_publicacion
+entity_type: node
+bundle: e_libros
+label: 'Tipo de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_e_libro: tipo_de_e_libro
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

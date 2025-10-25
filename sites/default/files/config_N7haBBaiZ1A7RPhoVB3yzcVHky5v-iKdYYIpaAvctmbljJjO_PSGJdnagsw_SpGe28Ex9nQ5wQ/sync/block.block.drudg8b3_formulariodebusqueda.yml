@@ -1,0 +1,21 @@
+uuid: 14482d3b-0c10-4a0e-a679-0bdfe40503c8
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drudg8b3
+id: drudg8b3_formulariodebusqueda
+theme: drudg8b3
+region: footer
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: búsqueda
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

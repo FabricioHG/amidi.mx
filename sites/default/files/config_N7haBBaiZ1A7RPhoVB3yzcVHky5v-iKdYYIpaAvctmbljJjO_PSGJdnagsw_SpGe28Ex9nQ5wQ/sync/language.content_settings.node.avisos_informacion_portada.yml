@@ -1,0 +1,11 @@
+uuid: aade62e8-d33b-4660-8ab3-454cc25842ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.avisos_informacion_portada
+id: node.avisos_informacion_portada
+target_entity_type_id: node
+target_bundle: avisos_informacion_portada
+default_langcode: site_default
+language_alterable: false

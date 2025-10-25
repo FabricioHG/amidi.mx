@@ -1,0 +1,29 @@
+uuid: e6a8049e-47b3-45b1-9502-bd7daee3d8ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icono
+    - node.type.avisos_informacion_portada
+    - taxonomy.vocabulary.icono
+id: node.avisos_informacion_portada.field_icono
+field_name: field_icono
+entity_type: node
+bundle: avisos_informacion_portada
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      icono: icono
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

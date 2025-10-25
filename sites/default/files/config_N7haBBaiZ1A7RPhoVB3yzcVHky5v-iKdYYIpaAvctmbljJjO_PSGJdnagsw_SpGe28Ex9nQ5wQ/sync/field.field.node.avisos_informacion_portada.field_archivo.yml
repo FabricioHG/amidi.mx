@@ -1,0 +1,27 @@
+uuid: 75f21ba4-5d87-4567-b572-6d89c1a3a6b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo
+    - node.type.avisos_informacion_portada
+  module:
+    - file
+id: node.avisos_informacion_portada.field_archivo
+field_name: field_archivo
+entity_type: node
+bundle: avisos_informacion_portada
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt zip tar.gz doc xls xlsx pdf docx'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,30 @@
+uuid: 7c7c6219-a84f-4743-b2f9-56fd4850ec33
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6646b91-236b-4b43-a9a3-43f38179714f'
+  module:
+    - block_content
+    - system
+  theme:
+    - drudg8b3
+id: programafront
+theme: drudg8b3
+region: content2
+weight: -19
+provider: null
+plugin: 'block_content:c6646b91-236b-4b43-a9a3-43f38179714f'
+settings:
+  id: 'block_content:c6646b91-236b-4b43-a9a3-43f38179714f'
+  label: 'Programa front'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

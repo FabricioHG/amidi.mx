@@ -1,0 +1,9 @@
+uuid: b46a4918-e2d8-4748-a578-5d561615dec3
+langcode: es
+status: true
+dependencies: {  }
+name: Autor
+vid: autor
+description: null
+weight: 0
+new_revision: false

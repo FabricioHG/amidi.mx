@@ -1,0 +1,36 @@
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw
+protect_all_forms: false
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+log: true
+element_name: url
+time_limit: 8
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  contact_message_feedback_form: true
+  contact_message_personal_form: false
+  node__aviso_emergente_form: false
+  node_avisos_informacion_portada_form: false
+  node_banner_form: false
+  node_directorio_form: false
+  node_e_libros_form: false
+  node_enlaces_de_interes_form: false
+  node_evento_de_agenda_form: false
+  node_galeria_de_imagenes_form: false
+  node_galeria_de_videos_form: false
+  node_liston_de_contenido_form: false
+  node_noticia_form: false
+  node_page_form: false
+  node_programa_form: false
+  node_slideshow_form: false
+  node_titulo_form: false
+  node_video_form: false
+  node_webinars_y_videos_form: false
+  comment_comment_form: false

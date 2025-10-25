@@ -1,0 +1,23 @@
+uuid: 900d1fac-a7cd-449b-a630-0ce3c0918a1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.avisos_informacion_portada
+  module:
+    - text
+id: node.avisos_informacion_portada.body
+field_name: body
+entity_type: node
+bundle: avisos_informacion_portada
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

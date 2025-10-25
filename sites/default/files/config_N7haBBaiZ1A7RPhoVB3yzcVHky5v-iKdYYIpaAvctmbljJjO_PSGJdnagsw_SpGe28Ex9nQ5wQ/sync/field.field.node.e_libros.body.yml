@@ -1,0 +1,23 @@
+uuid: b631b01f-7e6e-4c5c-b6ac-f101c898bd3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.e_libros
+  module:
+    - text
+id: node.e_libros.body
+field_name: body
+entity_type: node
+bundle: e_libros
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

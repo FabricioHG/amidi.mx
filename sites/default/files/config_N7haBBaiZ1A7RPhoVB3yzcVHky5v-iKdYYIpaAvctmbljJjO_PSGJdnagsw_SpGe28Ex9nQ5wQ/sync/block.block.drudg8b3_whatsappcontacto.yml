@@ -1,0 +1,22 @@
+uuid: d5064aa5-2ab3-44ab-8eba-1b3c39266a05
+langcode: es
+status: true
+dependencies:
+  module:
+    - udg_liston
+  theme:
+    - drudg8b3
+id: drudg8b3_whatsappcontacto
+theme: drudg8b3
+region: content
+weight: -12
+provider: null
+plugin: udg_liston_watsapp_contacto
+settings:
+  id: udg_liston_watsapp_contacto
+  label: 'Whatsapp contacto'
+  label_display: '0'
+  provider: udg_liston
+  texto: '¡Hola! Estoy interesado en obtener más información.'
+  num_cel: '3326264422'
+visibility: {  }

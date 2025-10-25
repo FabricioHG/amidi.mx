@@ -1,2 +1,4 @@
 # Ignorar settings.php
 /sites/*/settings.php
+.DS_Store
+*/.DS_Store

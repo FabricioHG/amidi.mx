@@ -1,0 +1,19 @@
+uuid: 3f4c5f39-87f0-469e-bc5e-c8fa0519336a
+langcode: es
+status: true
+dependencies: {  }
+id: menu_horizontal_equidistante
+label: 'Menú horizontal equidistante'
+code: |
+  ul.menu.menu-level-0 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    white-space: nowrap;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

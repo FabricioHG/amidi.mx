@@ -1,0 +1,29 @@
+uuid: 349b9b37-75cc-476b-a0e9-0041e8675c3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_video
+    - node.type.webinars_y_videos
+    - taxonomy.vocabulary.tipo_de_video
+id: node.webinars_y_videos.field_tipo_de_video
+field_name: field_tipo_de_video
+entity_type: node
+bundle: webinars_y_videos
+label: 'Tipo de video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_video: tipo_de_video
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
