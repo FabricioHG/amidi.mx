@@ -1,7 +1,7 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/wwamid/public_html/
+ - export DEPLOYPATH=/home/wwamid/public_html
  - /bin/cp -R core $DEPLOYPATH
  - /bin/cp -R libraries $DEPLOYPATH
  - /bin/cp -R modules $DEPLOYPATH
